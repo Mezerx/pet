@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <title>поле для игры</title>
+
+</head>
+<body bgcolor="#c0c0c0">
+<center>
+{% for p in posts %}
+{{ p }}
+{% endfor %}
+</center>
+</body>
+
+<form>
+    <ul>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+</ul>
+    <ul>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+</ul>
+    <ul>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+</ul>
+    <ul>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+</ul>
+    <ul>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+        <li><input type="checkbox"></li>
+
+
+
+    </ul>
+
+	<input class="green" type="reset" value="кнопка сброса">
+    </ul>
+    <style>
+        ul {
+  display: flex;
+  margin: 0;
+  justify-content: baseline;
+}
+li {
+  list-style: none;
+  border: 30px solid #666699;
+  ;
+}
+
+}
+button {
+    background: #008EB0; /* Синий цвет фона */
+    color: #fff; /* Белый цвет текста */
+    border: none; /* Убираем рамку */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    margin-bottom: 1rem; /* Отступ снизу */
+
+   }
+   .green { background: #73A353; }
+   .red { background: #C1172C; }
+   .orange { background: #F7941E; }
+
+    </style>
+</form>
+
+<body>
+    <form action="{% url 'gg' %}">
+      <button class="red" type="submit">Закончить игру</button>
+    </form>
+  </body>
+
+
+</html>

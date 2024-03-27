@@ -6,7 +6,7 @@ from note.views import index, page_not_found, gf
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('note.urls')),
-    path('game_field', gf),
+    #path('game_field', gf),
 
 ]
 
